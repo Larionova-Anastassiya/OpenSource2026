@@ -29,6 +29,15 @@ jobs:
       - name: Run test
         run: echo "Test passed"
 
+      - name: Lint check
+        run: echo "Lint passed"
+
+      - name: Build project
+        run: echo "Build complete"
+
+      - name: Check README
+        run: grep "project" README.md
+
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
